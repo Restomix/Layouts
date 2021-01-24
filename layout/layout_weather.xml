@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E6E8E6"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="top"
+        android:layout_weight="0.7"
+        android:background="@drawable/ic_background_q"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="100dp"
+            android:paddingBottom="0dp"
+            android:text="-2"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="114dp"
+            android:text="ºC"
+            android:textColor="#FFFFFF"
+            android:textSize="23dp"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="48dp"
+            android:text="Таромське"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:text="Ясно"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#00000"
+            android:text="Детальніше >"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="14dp"
+        android:text="Деталі"
+        android:textColor="@color/black" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:coulmnCount="2"
+        android:rowCount="2">
+
+        <GridLayout
+            android:paddingTop="13dp"
+            android:paddingBottom="0dp"
+            android:layout_gravity="top"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:coulmnCount="2"
+            android:rowCount="3">
+
+            <TextView
+                android:paddingLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_rowWeight="0.2"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:text="Вітер"
+                android:textSize="17dp" />
+
+            <TextView
+                android:paddingLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:text="27.8км/год"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:paddingLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:gravity="top"
+                android:text="Cх"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_marginRight="0dp"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_rowSpan="2"
+                android:src="@drawable/ic_wind"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+            </ImageView>
+
+        </GridLayout>
+        <GridLayout
+            android:layout_gravity="top"
+            android:paddingBottom="20dp"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:paddingTop="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:coulmnCount="2"
+            android:paddingLeft="20dp"
+
+            android:rowCount="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_rowWeight="0.2"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:text="REAL FEEL®"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:text="-2ºC"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_rowSpan="2"
+                android:layout_gravity="top"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_termometer">
+
+            </ImageView>
+
+
+        </GridLayout>
+        <GridLayout
+            android:layout_gravity="top"
+            android:paddingTop="20dp"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:coulmnCount="2"
+            android:paddingLeft="20dp"
+            android:rowCount="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_rowWeight="0.2"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:text="ІНДЕКС УФ"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="20dp"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_rowSpan="2"
+                android:layout_columnSpan="1"
+                android:src="@drawable/ic_son"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+            </ImageView>
+
+        </GridLayout>
+        <GridLayout
+            android:paddingTop="20dp"
+            android:layout_gravity="top"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:coulmnCount="2"
+            android:paddingStart="20dp"
+            android:rowCount="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_rowWeight="0.2"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:text="ТИСК"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:text="1020.0 мбар"
+                android:textColor="@color/black"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="20dp"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_rowSpan="2"
+                android:layout_columnSpan="1"
+                android:src="@drawable/ic_speedometer"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+            </ImageView>
+
+        </GridLayout>
+
+
+
+
+    </GridLayout>
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Дані надано"
+            android:textAlignment="center">
+        </TextView>
+        <ImageView
+            android:src="@drawable/ic_accuweather"
+            android:layout_width="150dp"
+            android:layout_height="20dp">
+        </ImageView>
+
+    </LinearLayout>
+
+
+    <GridLayout
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_weight="0.1"
+        android:rowCount="1"
+        android:columnCount="2"
+        android:background="#FFFFFF"
+        android:layout_height="0dp">
+
+       <TextView
+           android:layout_columnWeight="1"
+           android:layout_rowWeight="1"
+           android:layout_column="0"
+           android:layout_gravity="left"
+           android:text="+"
+           android:textSize="40dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+       </TextView>
+       <TextView
+           android:layout_column="1"
+           android:text="⋮"
+           android:textSize="40dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+       </TextView>
+    </GridLayout>
+
+
+</LinearLayout>
